@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Professional File Upload with Preview</title>
+
+    <!-- FontAwesome & Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h2 class="text-center">File Upload with JavaScript</h2>
+
+      <label for="file-uploader" class="image-preview-wrapper">
+        <img
+          src="https://via.placeholder.com/300x300/efefef?text=Avatar"
+          alt="image-placeholder"
+          class="img-thumbnail"
+          data-target="image-preview"
+        />
+        <div class="spinner-wrapper" data-target="spinner">
+          <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+        </div>
+      </label>
+
+      <div class="file-upload">
+        <input
+          multiple
+          accept="image/*"
+          type="file"
+          class="custom-file-input"
+          data-target="file-uploader"
+          id="file-uploader"
+        />
+        <label class="custom-file-label" for="file-uploader">Choose file</label>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
